@@ -8,6 +8,7 @@ async function getResponse(req) {
       <meta property="fc:frame" content="vNext" />
       <meta property="fc:frame:image" content="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmVqZ2VnY2d3NjQyM211cGJoejd5bDNtYmszcDBjeTl2eDMyanZ4YyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/TWsw90Csti2KCjvKfU/giphy.gif" />
       <meta property="fc:frame:button:1" content="To Podcast" />
+      <meta property="fc:frame:button:1:action" content="https://pods.media/" /> 
   </head>
   </html>
   `);
