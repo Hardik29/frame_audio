@@ -14,18 +14,14 @@ async function getResponse(req) {
       <title>Audio Test</title>
   </head>
   <body>
-      <audio id="audioPlayer" src="https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmeAU8s7mh2BaZM46hCNKHTxPhWHNpje6BiJuuSwpLQAwF"></audio>
-  
-      <script>
-          document.addEventListener('DOMContentLoaded', function () {
-              document.querySelector('[property="fc:frame:button:1"]').addEventListener('click', function () {
-                  var audio = document.getElementById('audioPlayer');
-                  audio.play().catch(error => {
-                      console.error('Error playing audio:', error);
-                  });
-              });
-          });
-      </script>
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audio = new Audio("https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmeAU8s7mh2BaZM46hCNKHTxPhWHNpje6BiJuuSwpLQAwF");
+            audio.play().catch(error => {
+                console.error('Error playing audio:', error);
+            });
+        });
+    </script>
   </body>
   </html>
   `);
