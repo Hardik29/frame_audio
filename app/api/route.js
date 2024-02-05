@@ -2,19 +2,33 @@ import { NextResponse } from 'next/server';
 
 async function getResponse(req) {
   console.log('API frame route called');
-  return new NextResponse(`  <!DOCTYPE html><html><head> 
-  <meta property="fc:frame" content="vNext" /> 
-  <meta property="fc:frame:image" content="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmVqZ2VnY2d3NjQyM211cGJoejd5bDNtYmszcDBjeTl2eDMyanZ4YyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/TWsw90Csti2KCjvKfU/giphy.gif" /> 
+  return new NextResponse(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta property="fc:frame" content="vNext" />
+      <meta property="fc:frame:image" content="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmVqZ2VnY2d3NjQyM211cGJoejd5bDNtYmszcDBjeTl2eDMyanZ4YyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/TWsw90Csti2KCjvKfU/giphy.gif" />
+      <meta property="fc:frame:button:1" content="Play Audio" />
+      <title>Audio Test</title>
   </head>
   <body>
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-  var audio = new Audio("https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmeAU8s7mh2BaZM46hCNKHTxPhWHNpje6BiJuuSwpLQAwF");
-  audio.play();
-  });
-  </script>
+      <audio id="audioPlayer" src="https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmeAU8s7mh2BaZM46hCNKHTxPhWHNpje6BiJuuSwpLQAwF"></audio>
+  
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              document.querySelector('[property="fc:frame:button:1"]').addEventListener('click', function () {
+                  var audio = document.getElementById('audioPlayer');
+                  audio.play().catch(error => {
+                      console.error('Error playing audio:', error);
+                  });
+              });
+          });
+      </script>
   </body>
-  </html> `);
+  </html>
+  `);
 
 }
 
