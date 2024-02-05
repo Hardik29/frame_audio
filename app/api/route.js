@@ -10,12 +10,8 @@ async function getResponse(req) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta property="fc:frame" content="vNext" />
       <meta property="fc:frame:image" content="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmVqZ2VnY2d3NjQyM211cGJoejd5bDNtYmszcDBjeTl2eDMyanZ4YyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/TWsw90Csti2KCjvKfU/giphy.gif" />
-      <meta property="fc:frame:button:1" content="Play Audio" />
-    <meta property="og:title" content="Episode 123: Data Availability in the Modular Stack Explained" />
-    <meta property="og:type" content="music.song" />
-    <meta property="og:url" content="https://pods.media/the-rollup/ep-123-data-availability-in-the-modular-stack-explained" />
-    <meta property="og:audio" content="https://pods.media/the-rollup/ep-123-data-availability-in-the-modular-stack-explained" />
-    <meta property="og:audio:type" content="audio/mpeg" />
+      <meta property="fc:frame:button:1" content="To Podcast" />
+      <meta property="fc:frame:button:1:action" content="https://pods.media/the-rollup/ep-123-data-availability-in-the-modular-stack-explained" /> 
   </head>
   </html>
   `);
