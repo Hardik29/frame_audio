@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: { 
     title: 'Meme Frame',
     description: 'Meme frame',
-    images: ['https://lemon-frame.vercel.app/img-2.png'],
+    images: ['iamge'],
   },
   other: {
     ...frameMetadata,
