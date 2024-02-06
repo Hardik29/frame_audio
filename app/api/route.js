@@ -4,7 +4,7 @@ async function getResponse(req) {
   console.log('API frame route called');
   return new NextResponse(`  <!DOCTYPE html><html><head> 
   <meta property="fc:frame" content="vNext" /> 
-  <meta property="fc:frame:image" content="https://www.canva.com/design/DAF73FvKU1U/k57xc8VQF31MlJ82-lx63g/view?utm_content=DAF73FvKU1U&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel" /> 
+  <meta property="fc:frame:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--hhyrvv9a--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eefd4ew38ryyrfk6m5nk.png" /> 
   </head></html> 
   `);
 } 

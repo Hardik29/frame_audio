@@ -27,6 +27,14 @@ export const metadata = {
 export default function Page() {
   return (
     <div className="container mx-auto p-4">
+    <h1 className="text-2xl font-bold mb-4">Play Podcast</h1>
+    <audio id="audio" className="mb-4" controls>
+      <source src="https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmeAU8s7mh2BaZM46hCNKHTxPhWHNpje6BiJuuSwpLQAwF" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div>
+      Get more <a href="https://pods.media/">Link</a>
+    </div>
   </div>
   );
 }
