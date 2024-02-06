@@ -5,7 +5,6 @@ async function getResponse(req) {
   return new NextResponse(`  <!DOCTYPE html><html><head> 
   <meta property="fc:frame" content="vNext" /> 
   <meta property="fc:frame:image" content="https://www.canva.com/design/DAF73FvKU1U/k57xc8VQF31MlJ82-lx63g/view?utm_content=DAF73FvKU1U&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel" /> 
-  <meta property="fc:frame:button:1" content="To the podcast" /> 
   </head></html> 
   `);
 } 
