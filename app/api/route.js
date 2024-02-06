@@ -4,7 +4,7 @@ async function getResponse(req) {
   console.log('API frame route called');
   return new NextResponse(`  <!DOCTYPE html><html><head> 
   <meta property="fc:frame" content="vNext" /> 
-  <meta property="fc:frame:image" content="https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmaDbq5Wsv2Lr1cWf2AvPWrzbTUNwnKVHF6CNAweMzSCJz" /> 
+  <meta property="fc:frame:image" content="https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmYtFzzkbktkmPUXWqDvi3pLoj4X74a1qmawJ1gxXCo2Mu" /> 
   <meta property="fc:frame:button:1" content="To The Conversation 👆" /> 
   </head></html> 
   `);
