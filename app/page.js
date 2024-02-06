@@ -36,23 +36,8 @@ export default function Page() {
       Your browser does not support the audio element.
     </audio>
     <div>
-      <button id="playBtn" className="mr-2">Play</button>
-      <button id="pauseBtn">Pause</button>
-    </div>
-    <div>
       Get more <a href="https://pods.media/">Link</a>
     </div>
-    <script dangerouslySetInnerHTML={{
-      __html: `
-        document.getElementById('playBtn').addEventListener('click', function() {
-          document.getElementById('audio').play();
-        });
-
-        document.getElementById('pauseBtn').addEventListener('click', function() {
-          document.getElementById('audio').pause();
-        });
-      `
-    }} />
   </div>
   );
 }
