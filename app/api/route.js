@@ -6,14 +6,13 @@ async function getResponse(req) {
   <html lang="en">
   <head>
       <meta property="fc:frame" content="vNext" />
-      <meta property="fc:frame:image" content="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmVqZ2VnY2d3NjQyM211cGJoejd5bDNtYmszcDBjeTl2eDMyanZ4YyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/TWsw90Csti2KCjvKfU/giphy.gif" />
-      <meta property="fc:frame:button:1" content="To Podcast" />
-      <meta property="fc:frame:button:1:action" content="https://pods.media/" /> 
+      <meta property="fc:frame:image" content="https://www.canva.com/design/DAF73FvKU1U/k57xc8VQF31MlJ82-lx63g/view?utm_content=DAF73FvKU1U&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel" />
+      <meta property="fc:frame:button:1" content="To The Conversation 👆" />
   </head>
   </html>
   `);
 
-}
+} 
 
 export async function POST(req) {
   return getResponse(req);

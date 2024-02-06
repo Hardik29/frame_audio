@@ -1,4 +1,5 @@
 import { getFrameMetadata } from '@coinbase/onchainkit';
+import './page.css';
 
 const frameMetadata = getFrameMetadata({
 
@@ -26,9 +27,32 @@ export const metadata = {
 };
 
 export default function Page() {
+
   return (
-    <>
-      <h1>Meme Page</h1>
-    </>
+    <div className="container mx-auto p-4">
+    <h1 className="text-2xl font-bold mb-4">Play Podcast</h1>
+    <audio id="audio" className="mb-4" controls>
+      <source src="https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmeAU8s7mh2BaZM46hCNKHTxPhWHNpje6BiJuuSwpLQAwF" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div>
+      <button id="playBtn" className="mr-2">Play</button>
+      <button id="pauseBtn">Pause</button>
+    </div>
+    <div>
+      Get more <a href="https://pods.media/">Link</a>
+    </div>
+    <script dangerouslySetInnerHTML={{
+      __html: `
+        document.getElementById('playBtn').addEventListener('click', function() {
+          document.getElementById('audio').play();
+        });
+
+        document.getElementById('pauseBtn').addEventListener('click', function() {
+          document.getElementById('audio').pause();
+        });
+      `
+    }} />
+  </div>
   );
 }
