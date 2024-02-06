@@ -4,7 +4,8 @@ async function getResponse(req) {
   console.log('API frame route called');
   return new NextResponse(`  <!DOCTYPE html><html><head> 
   <meta property="fc:frame" content="vNext" /> 
-  <meta property="fc:frame:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--hhyrvv9a--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eefd4ew38ryyrfk6m5nk.png" /> 
+  <meta property="fc:frame:image" content="https://cyan-deep-moth-632.mypinata.cloud/ipfs/QmNpwH2gDsnsmRbS3uUu4qBxAaRnmy5h2VfWR9sVQvX2p3" /> 
+  <meta property="fc:frame:button:1" content="To The Conversation 👆" /> 
   </head></html> 
   `);
 } 
